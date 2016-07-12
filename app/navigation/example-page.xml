@@ -1,34 +1,38 @@
-<navigation:ExamplePage
-    xmlns:navigation="navigation/example-page"
-    loaded="pageLoaded"
-    xmlns:drawer="nativescript-telerik-ui/sidedrawer"
-    xmlns="http://www.nativescript.org/tns.xsd">
-    <navigation.actionBar>
-        <ActionBar title="Getting started" />
-    </navigation.actionBar>
-  <drawer:RadSideDrawer id="sideDrawer">
-    <drawer:RadSideDrawer.mainContent>
-      <StackLayout >
-        <Label text="{{ mainContentText }}" textWrap="true" cssClass="drawerContentText"/>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+      loaded="pageLoaded" 
+      backgroundSpanUnderStatusBar="true">
 
-      </StackLayout>
+    <Page.actionBar>
+      <ActionBar title="MMWCon" className="iconic-font">
+        <ActionBar.actionItems>
+            <ActionItem>
+              <ActionItem.actionView>
+                  <!--<StackLayout orientation="horizontal">-->
+                    <Label text="&#xf197;"  tap="onTapDrawer"/>
+                  <!--</StackLayout>-->
+              </ActionItem.actionView>
+            </ActionItem>
+      </ActionBar.actionItems>
+          <!--<ActionItem text=" &#xf117; Shop" android.systemIcon="ic_menu_edit" ios.position="left" className="iconic-font" tap="onTapDrawer"></ActionItem>-->
+      </ActionBar>
+    </Page.actionBar>
+
+    <drawer:RadSideDrawer id="SideDrawer" class="page-content">  
+      <drawer:RadSideDrawer.drawerTransition>
+          <drawer:PushTransition />
+      </drawer:RadSideDrawer.drawerTransition>
+      <drawer:RadSideDrawer.drawerContent>
+        <StackLayout>
+          <Label text="This is a test" />
+        </StackLayout>
+      </drawer:RadSideDrawer.drawerContent>
+
+    <drawer:RadSideDrawer.mainContent>
+      
+      <Label text="This is the main content &#xf117; Shop" className="iconic-font" />
+
     </drawer:RadSideDrawer.mainContent>
-    <drawer:RadSideDrawer.drawerContent>
-      <StackLayout cssClass="drawerContent">
-        <StackLayout cssClass="headerContent">
-          <Label text="Navigation Menu"/>
-        </StackLayout>
-        <StackLayout cssClass="drawerMenuContent">
-          <Label text="Primary" cssClass="drawerSectionHeader" />
-          <Label text="Social" cssClass="drawerSectionItem" />
-          <Label text="Promotions" cssClass="drawerSectionItem" />
-          <Label text="Labels" cssClass="drawerSectionHeader" />
-          <Label text="Important" cssClass="drawerSectionItem" />
-          <Label text="Starred" cssClass="drawerSectionItem" />
-          <Label text="Sent Mail" cssClass="drawerSectionItem" />
-          <Label text="Drafts" cssClass="drawerSectionItem" />
-        </StackLayout>
-      </StackLayout>
-    </drawer:RadSideDrawer.drawerContent>
   </drawer:RadSideDrawer>
-</navigation:ExamplePage>
+
+</Page>

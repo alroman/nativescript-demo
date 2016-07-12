@@ -1,0 +1,9 @@
+StackLayout {
+    background-color: black;
+    color: white;
+}
+
+
+.iconic-font {
+    font-family: 'Material-Design-Iconic-Font';
+}
