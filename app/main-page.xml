@@ -1,0 +1,68 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" navigatingTo="onNavigatingTo">    
+
+  <Page.actionBar>
+      <ActionBar title="MMWCon">
+          <!--<ActionItem ios.systemIcon="7" android.systemIcon="ic_menu_edit" ios.position="left"></ActionItem>-->
+
+      </ActionBar>
+  </Page.actionBar>
+
+  <GridLayout>
+    <TabView>
+      <TabView.items>
+        <!--First tab-->
+        <TabViewItem title="Day 1">
+          <TabViewItem.view>
+            <GridLayout rows="auto, *" columns="*" >
+              <StackLayout row="0" className="heading">
+                <Label text="Wednesday September 14 , 2016"  className="heading"/>
+              
+                <SegmentedBar cssClass="conf-segmented-bar" selectedIndexChanged="onBarTap" id="tapping-bar" ios:selectedBackgroundColor="#fff">
+                  <SegmentedBar.items>
+                    <SegmentedBarItem title="Track 1" />
+                    <SegmentedBarItem title="Track 2"  />
+                    <!--<SegmentedBarItem title="Track 3" />-->
+                  </SegmentedBar.items>
+                </SegmentedBar>
+              </StackLayout>
+              <GridLayout row="1" rows="auto, *" >
+                <!-- Search -->
+                <SearchBar row="0" text="{{ search }}" hint="Filter" id="search" borderWidth="0" android:loaded="doNotShowAndroidKeyboard" />
+                <!--Table-->
+                <ListView row="1" items="{{ sessions }}" itemTap="navigateToDetail" >
+                  <ListView.itemTemplate>
+                    <StackLayout className="{{ boxStyle }}">
+                      <WrapLayout>
+                        <Label text="{{ time }}" horizontalAlignment="left" className="time" />
+                        <Label text="{{ room }}" horizontalAlignment="left" className="room" />
+                      </WrapLayout>
+                      <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" className="{{ textStyle }}" textWrap="true"/>
+                      <Label text="{{ location }}" horizontalAlignment="left" className="location"/>
+                    </StackLayout>
+                  </ListView.itemTemplate>
+                </ListView>
+              </GridLayout>
+            </GridLayout>
+          </TabViewItem.view>
+        </TabViewItem>
+        <TabViewItem title="Day 2">
+          <TabViewItem.view>
+              <Label text="Label in Tab2" />
+              
+          </TabViewItem.view>
+        </TabViewItem>
+        <TabViewItem title="Day 3">
+          <TabViewItem.view>
+              <Label text="Label in Tab2" />
+          </TabViewItem.view>
+        </TabViewItem>
+        <TabViewItem title="Maps">
+          <TabViewItem.view>
+              <Label text="Maps" />
+          </TabViewItem.view>
+        </TabViewItem>
+      </TabView.items>
+    </TabView>
+    
+  </GridLayout>
+</Page>

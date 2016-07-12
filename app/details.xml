@@ -1,0 +1,54 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" >    
+    <Page.actionBar>
+      <ActionBar title="{{ title }}">
+          <!--<ActionItem ios.systemIcon="7" android.systemIcon="ic_menu_edit" ios.position="left"></ActionItem>-->
+      </ActionBar>
+    </Page.actionBar>
+  <!--<StackLayout>-->
+    <!--<GridLayout>-->
+                <!--<GridLayout rows="1" columns="2">
+                    <Label text="test" row="1" col="1" />
+                    <Label text="test 2" row="1" col="2" />
+                </GridLayout>-->
+        <!--<DockLayout>
+            <StackLayout dock="left">
+                <Label text="{{ title }}" />
+            </StackLayout>
+            <StackLayout dock="right">
+                
+            </StackLayout>
+        </DockLayout>-->
+    <!--</GridLayout>-->
+    <ScrollView>
+  <StackLayout className="main">
+  <GridLayout columns="75,  *" rows="auto, auto" className="profile" >
+        
+        <Image src="~/images/avatar-placeholder.png" row="0" col="0" width="50" verticalAlignment="middle" />
+        <!--<Label text="Label 1" row="0" col="0" backgroundColor="red"/>-->
+        <!--<Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"/>-->
+        <!--<Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"/>
+        <Label text="Label 4" row="1" col="1" backgroundColor="yellow"/>-->
+        <!--<Label text="Label 5" row="1" col="2" backgroundColor="orange"/>
+        <Label text="Label 6" row="2" col="1" backgroundColor="pink"/>
+        <Label text="Label 7" row="2" col="2" backgroundColor="purple"/>-->
+        <StackLayout row="0" col="1" >
+            <!--<GridLayout columns="150, *" rows="auto, auto" >-->
+            <!--<Label text="Title"  backgroundColor="red"/>-->
+            <Label text="The Happiness Challenge - A Campus-Based Mental Health Promotion Program"  textWrap="true" className="title"/>
+            <Label text="Presenter" className="presenter" />
+            <Label text="Leslie Rith-Najarian" className="name" /> 
+        <!--</GridLayout>-->
+        </StackLayout>
+        
+     </GridLayout>
+        <Label text="add to calendar" className="separator-title" tap="addToCalendar" />
+            <Label text="Abstract" className="separator-title" />
+            <Label text="The Happiness Challenge is an online mental health promotion program that is delivered to university students at a group-level. The program provides information about habits and instructions for students to practice strategies, such as: challenging negative thoughts, sleep hygiene, time management, physical exercise, mindfulness and more. Participants complete surveys at the end of every week to self-assess how effective they found strategies. While many online or mobile program are completed by independent users, The Happiness Challenge encourages students to sign-up with their friends and peers, and all students work on the same strategies week-by-week.
+
+Given high attrition rates for internet and mobile interventions, we designed the program to more naturally integrate into participants’ life. By delivering program materials via email, electronic calendar reminders, and website, we hoped to simplify program engagement. However, attrition rates remained high: while more than 1,600 students enrolled, only about 40% used the program, with only about 10% completing the program. Participants reported weekly emails as their top platform preference. This presentation will review predictors of drop-out and will invite discussion around how to use technology to improve engagement. The Happiness Challenge team plans to rebuild the platform to improve retention and better integrate participant data integration, and this presentation will accordingly invite suggestions."  textWrap="true" className="abstract" />
+
+            <Label text="Details" className="separator-title" />
+        </StackLayout>
+  <!--</StackLayout>-->
+  </ScrollView>
+</Page>

@@ -1,0 +1,100 @@
+Label {
+    /*margin: 15;*/
+    margin-left: 15
+}
+
+ActionBar {
+    /*background-color:  #245088;*/
+    background-color: #0375CD;
+    color: white;
+}
+
+/*.odd {
+    background-color: blue;
+    color: deeppink;
+    height: 170;
+}*/
+
+TabViewItem {
+    font-size: 14;
+    font-weight: bold
+}
+
+.conf-segmented-bar {
+    margin: 15;
+    /*background-color: #e9b21e;*/
+    /*color: #4077c2;*/
+    /*border-color: white;*/
+    color: white;
+}
+SearchBar {
+    background-color: #3597E3;
+    padding: -1 0 0 0;
+}
+
+Label.track {
+    font-size: 15;
+}
+/* Heading */
+StackLayout.heading {
+    /*background-color: #e9b21e;*/
+    background-color: #3597E3;
+    text-align: center;
+    /*margin:  15;*/
+}
+/*SegmentedBarItem {
+    background-color: #e9b21e;
+    margin: 15;
+    color: white;
+}*/
+Label.heading {
+    margin: 5;
+    /*margin-bottom: 15;*/
+    /*background-color: white;*/
+    /*color: #414959;*/
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+StackLayout.heading .location, StackLayout.time .location, StackLayout.general .location {
+    visibility: collapse;
+}
+
+Label.track {
+    margin-top: 2;
+    margin-bottom: 2;
+}
+
+Label.general {
+    margin: 10;
+    margin-top: 5;
+
+}
+/* Location */
+
+Label.location {
+    color: darkorange;
+    margin: 5;
+    margin-left: 15;
+    margin-bottom: 5;
+    font-size: 12;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*Time*/
+
+Label.time {
+    margin: 5;
+    margin-left: 15;
+    /*color: white;*/
+    font-size: 13;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*margin-bottom: 0;*/
+}
+
+Label.room {
+    margin-left: 2;
+    font-size: 13;
+    color: darkgrey;
+}

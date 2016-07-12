@@ -1,0 +1,56 @@
+GridLayout {
+    /*background-color: #245088;*/
+    /*color: white;*/
+    /*background: linear-gradient(red, yellow);
+    background: -webkit-linear-gradient(red, yellow);*/
+}
+
+ActionBar {
+    background-color:  #245088;
+    color: white;
+}
+
+GridLayout {
+    margin-top: 0;
+}
+
+Label {
+    margin: 4;
+}
+
+GridLayout.profile {
+    
+}
+
+.title {
+    margin: 0;
+    margin-top: 8;
+    margin-bottom: 8;
+    margin-right: 12;
+    color: black;
+    font-size: 18;
+}
+.presenter {
+    color: #666;
+    font-size: 12;
+    margin-bottom: 0;
+}
+.name {
+    color: black;
+    font-size: 14;
+}
+
+.separator-title {
+    background-color: #ddd;
+    color: #222;
+    font-size: 14;
+    margin: 0;
+    margin-top: 8;
+    padding: 8;
+    padding-left: 16;
+}
+
+.abstract {
+    font-size: 14;
+    margin: 16;
+}

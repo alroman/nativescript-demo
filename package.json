@@ -1,0 +1,27 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.nativescript.TestApp",
+    "tns-ios": {
+      "version": "2.1.0"
+    },
+    "tns-android": {
+      "version": "2.1.1"
+    }
+  },
+  "dependencies": {
+    "nativescript-calendar": "^1.0.6",
+    "nativescript-sectioned-list-view": "^0.3.2",
+    "observable-sectioned-array": "^0.1.2",
+    "tns-core-modules": "2.1.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.10.4",
+    "babel-types": "6.11.1",
+    "babylon": "6.8.3",
+    "lazy": "1.0.11"
+  }
+}

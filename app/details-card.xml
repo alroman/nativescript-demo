@@ -1,0 +1,39 @@
+<Page xmlns:Card="nativescript-cardview" xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" >
+   <Page.actionBar>
+      <ActionBar title="{{ title }}">
+          <!--<ActionItem ios.systemIcon="7" android.systemIcon="ic_menu_edit" ios.position="left"></ActionItem>-->
+      </ActionBar>
+    </Page.actionBar>
+    <ScrollView>
+   <StackLayout>     
+      <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+           <!--<grid-layout rows="200, auto, auto" columns="auto, auto, *">
+               <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
+               <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
+               <button text="DECLINE" tap="goAway" row="2" col="0" />
+               <button text="ACCEPT" row="2" col="1" />
+           </grid-layout>-->
+           <GridLayout columns="130,  *" rows="auto, auto" className="profile" >
+            
+                <Image src="~/images/avatar-placeholder.png" row="0" col="0" width="100" verticalAlignment="middle" />
+                <StackLayout row="0" col="1" class="details" >
+                    <Label text="The Happiness Challenge - A Campus-Based Mental Health Promotion Program"  textWrap="true" className="title"/>
+                    <Label text="Presenter" className="presenter" />
+                    <Label text="Leslie Rith-Najarian" className="name" /> 
+                </StackLayout>
+            </GridLayout>
+       </Card:CardView>
+
+       <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
+                <StackLayout row="0" col="1" class="details" >
+ <Label text="Abstract" className="separator-title" />
+            <Label text="The Happiness Challenge is an online mental health promotion program that is delivered to university students at a group-level. The program provides information about habits and instructions for students to practice strategies, such as: challenging negative thoughts, sleep hygiene, time management, physical exercise, mindfulness and more. Participants complete surveys at the end of every week to self-assess how effective they found strategies. While many online or mobile program are completed by independent users, The Happiness Challenge encourages students to sign-up with their friends and peers, and all students work on the same strategies week-by-week.
+
+Given high attrition rates for internet and mobile interventions, we designed the program to more naturally integrate into participants’ life. By delivering program materials via email, electronic calendar reminders, and website, we hoped to simplify program engagement. However, attrition rates remained high: while more than 1,600 students enrolled, only about 40% used the program, with only about 10% completing the program. Participants reported weekly emails as their top platform preference. This presentation will review predictors of drop-out and will invite discussion around how to use technology to improve engagement. The Happiness Challenge team plans to rebuild the platform to improve retention and better integrate participant data integration, and this presentation will accordingly invite suggestions."  textWrap="true" className="abstract" />
+
+            <Label text="Details" className="separator-title" /> 
+                </StackLayout>
+       </Card:CardView>
+   </StackLayout>
+   </ScrollView>
+</Page>
