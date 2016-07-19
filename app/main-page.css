@@ -21,14 +21,15 @@ TabViewItem {
 }
 
 .conf-segmented-bar {
-    margin: 15;
+    margin: 10;
     /*background-color: #e9b21e;*/
     /*color: #4077c2;*/
     /*border-color: white;*/
-    color: white;
+    color: #0375CD;
 }
 SearchBar {
-    background-color: #3597E3;
+    /*background-color: #0375CD;*/
+    background-color: white;
     padding: -1 0 0 0;
 }
 
@@ -38,7 +39,7 @@ Label.track {
 /* Heading */
 StackLayout.heading {
     /*background-color: #e9b21e;*/
-    background-color: #3597E3;
+    /*background-color: #3597E3;*/
     text-align: center;
     /*margin:  15;*/
 }
@@ -49,10 +50,11 @@ StackLayout.heading {
 }*/
 Label.heading {
     margin: 5;
-    /*margin-bottom: 15;*/
+    margin-bottom: 0;
+    font-size: 14p;
     /*background-color: white;*/
     /*color: #414959;*/
-    color: white;
+    color: #0375CD;
     text-align: center;
     margin-bottom: 0;
 }
@@ -91,6 +93,7 @@ Label.time {
     font-weight: bold;
     text-transform: uppercase;
     /*margin-bottom: 0;*/
+    /*font-family: 'Material-Design-Iconic-Font';*/
 }
 
 Label.room {

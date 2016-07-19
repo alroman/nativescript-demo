@@ -21,3 +21,7 @@ button {
     padding-left: 10;
     height: 60;
 }
+
+.iconic-font {
+    font-family: 'Material-Design-Iconic-Font';
+}

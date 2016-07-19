@@ -23,7 +23,7 @@
   <StackLayout className="main">
   <GridLayout columns="75,  *" rows="auto, auto" className="profile" >
         
-        <Image src="~/images/avatar-placeholder.png" row="0" col="0" width="50" verticalAlignment="middle" />
+        <Image src="~/images/profile.png" row="0" col="0" width="50" verticalAlignment="middle" />
         <!--<Label text="Label 1" row="0" col="0" backgroundColor="red"/>-->
         <!--<Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"/>-->
         <!--<Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"/>
@@ -35,7 +35,7 @@
             <!--<GridLayout columns="150, *" rows="auto, auto" >-->
             <!--<Label text="Title"  backgroundColor="red"/>-->
             <Label text="The Happiness Challenge - A Campus-Based Mental Health Promotion Program"  textWrap="true" className="title"/>
-            <Label text="Presenter" className="presenter" />
+            <Label text="Presenter" className="presenter"  />
             <Label text="Leslie Rith-Najarian" className="name" /> 
         <!--</GridLayout>-->
         </StackLayout>

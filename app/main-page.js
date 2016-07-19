@@ -117,6 +117,25 @@ var tracks = [trackOne, trackTwo]
 exports.loaded = function (args) {
     page = args.object
     page.bindingContext = sessionData
+
+    // Change ios bar style
+    if (args.object.ios) {
+        var controller = FrameModule.topmost().ios.controller;
+        var navigationBar = controller.navigationBar;
+        
+        navigationBar.translucent = false
+        navigationBar.barStyle = 1;
+
+        console.log("============")
+        
+        var search = FrameModule.topmost().getViewById("search")
+        console.log(search)
+        if (search) {
+            search.ios.searchBarStyle = 2
+            search.ios.layer.borderWidth = 0
+        }
+
+    }
 }
 
 exports.navigateToDetail = function(args) {

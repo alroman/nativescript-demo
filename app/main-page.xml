@@ -1,9 +1,16 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" navigatingTo="onNavigatingTo">    
 
   <Page.actionBar>
-      <ActionBar title="MMWCon">
-          <!--<ActionItem ios.systemIcon="7" android.systemIcon="ic_menu_edit" ios.position="left"></ActionItem>-->
-
+      <ActionBar title="MMWCon" className="iconic-font">
+        <ActionBar.actionItems>
+            <ActionItem>
+              <ActionItem.actionView>
+                  <!--<StackLayout orientation="horizontal">-->
+                    <Label text="&#xf197;"  tap="onTapDrawer"/>
+                  <!--</StackLayout>-->
+              </ActionItem.actionView>
+            </ActionItem>
+        </ActionBar.actionItems>
       </ActionBar>
   </Page.actionBar>
 
@@ -15,9 +22,9 @@
           <TabViewItem.view>
             <GridLayout rows="auto, *" columns="*" >
               <StackLayout row="0" className="heading">
-                <Label text="Wednesday September 14 , 2016"  className="heading"/>
+                <Label text="&#xf332; Wednesday September 14 , 2016"  className="heading iconic-font"/>
               
-                <SegmentedBar cssClass="conf-segmented-bar" selectedIndexChanged="onBarTap" id="tapping-bar" ios:selectedBackgroundColor="#fff">
+                <SegmentedBar cssClass="conf-segmented-bar" selectedIndexChanged="onBarTap" id="tapping-bar" ios:selectedBackgroundColor="#0375CD">
                   <SegmentedBar.items>
                     <SegmentedBarItem title="Track 1" />
                     <SegmentedBarItem title="Track 2"  />
@@ -27,7 +34,7 @@
               </StackLayout>
               <GridLayout row="1" rows="auto, *" >
                 <!-- Search -->
-                <SearchBar row="0" text="{{ search }}" hint="Filter" id="search" borderWidth="0" android:loaded="doNotShowAndroidKeyboard" />
+                <SearchBar row="0" text="{{ search }}" hint="Filter" id="search" borderWidth="0" android:loaded="doNotShowAndroidKeyboard" textFieldHintColor="#ccc"/>
                 <!--Table-->
                 <ListView row="1" items="{{ sessions }}" itemTap="navigateToDetail" >
                   <ListView.itemTemplate>
